@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+       body{
+           background : url(wall.jpg) repeat;
+           padding: 100px;
+
+       }
+        .tr1{
+            text-transform: capitalize;
+            text-align : center;
+            font-weight:bold ;
+            color:maroon;
+        }
+        form{
+          
+           margin:150px 400px; 
+          align-items: center;
+          border:2px solid black;  
+          width:fit-content;
+        }
+        table{
+            height:200px;
+        }
+        table,tr,td{
+            border :  1px solid black;
+            border-collapse: collapse;
+           
+        }
+        .f1{
+            background-color:burlywood;
+        }
+        input:hover{
+            background-color:whitesmoke;
+            padding : 5px;
+            /* background-image: url(nature.jpg); */
+        }
+        input{
+            background-color:cadetblue;
+        }
+        th{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-shadow: 1px 1px lightblue;
+        }
+        p:first-child{
+            color:red;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <center>
+        
+    <form action="">
+        <table class="f1"> 
+            <th class="tr1 " colspan="2">enter all details</th>
+            <tr>
+                <th>
+                    <i class="fa-solid fa-user"></i>
+                    <label>Full Name</label> </th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+               
+              <th><i class="fa-solid fa-phone"></i><label for="">contact number</label></th> 
+              <td><input type="number" maxlength="10"></td> 
+            </tr>
+            <tr>
+                <th>
+                    <i class="fa-solid fa-envelope"></i>
+                    <label for="">Email</label>
+                </th>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <th><label for=""> Gender</label></th>
+                <td> <label for="m">male</label><input type="radio" name="g">
+                   <label for="f">female</label> <input type="radio" name="g">
+                </td>
+            </tr>
+            <tr>
+               <th><i class="fa-regular fa-face-laugh-beam"></i>
+                   <label for="">Hobbies</label></th>
+                <td>
+                   <label for="r">reading</label> <input type="checkbox" name="reading">
+                   <label for="p">playing</label> <input type="checkbox" name="reading">
+                   <br>
+                   <label for="pa">painting</label> <input type="checkbox" name="reading">
+                   <label for="o">outing</label> <input type="checkbox" name="reading">
+                </td> 
+                </tr>
+                <tr>
+                    <th><i class="fa-solid fa-location-dot"></i>
+                        <label for="">city</label></th>
+                    <td><input type="text">
+                    </td>
+                </tr>
+            <tr>
+                <th colspan="2"><button>submit</button></th>
+            </tr>
+        </table>
+    </form>
+
+</center>
+    <!-- <div>
+        <p>hello</p>
+    <p>all</p>    </div>
+    <i>
+        <p>good</p>
+        <p>afternoon</p>
+    </i> -->
+</body>
+</html>

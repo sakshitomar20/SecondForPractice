@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main:hover+p{
+      background-color: brown;
+        }
+        p::before{
+            content: "tiger ";
+
+        }
+        p::after{
+            content:"pune";
+            color: aqua;
+        }
+        ::selection
+        {
+            background-color:beige;
+            color:black;
+        }
+        ::marker
+        {
+           color:cornflowerblue;
+           font-size: 30px;
+        }
+        /* .image{
+            background-image: url(nature.jpg) ;
+            padding:20px;
+            border-image:url(tiger.jpg) 100% round;
+        } */
+        /* .image{
+            background-image:  url(nature.jpg),url(tiger.jpg);
+             background-repeat: no-repeat, no-repeat ;
+            background-position: left top,right bottom ;
+            height:400px ;
+           
+           
+        } */
+        .image{
+            background:url(flower.jpg) center no-repeat,url(wall.jpg) right repeat;
+            padding:200px;
+            background-size: 500px , 200px;
+            height :700px,200px;
+        }
+        #grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right,red, yellow);
+  background-image: linear-gradient(to bottom,yellow, green);
+} 
+#grad {
+    height:20px;
+  background-image: conic-gradient(from 90deg, red, yellow, green);
+}
+#grad2{
+    height:500px;
+    background-image: radial-gradient(circle, red, yellow, green);
+}
+    </style>
+</head>
+<body>
+    <p class="main">hello</p>
+    <p>good day</p>
+   so when we hovwe at hello , background color of good day will chages. 
+ <p>Capgemini</p>
+ <p>working day..</p>
+ <ul>
+     <li>cloud computing</li>
+     <li>python</li>
+     <li>java</li>
+ </ul>
+ <div id="grad1"></div>
+ <div class="image" >
+     <h1>working</h1>
+ </div>
+ <div id="grad1"></div>
+<!--<div id="grad2"></div> 
+<div id="grad"></div>-->
+</body>
+</html>
